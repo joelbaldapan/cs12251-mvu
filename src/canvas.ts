@@ -109,7 +109,7 @@ export const CanvasMsg = S.Union(
   }),
 )
 export type CanvasMsg = typeof CanvasMsg.Type
-export const [MsgTick, MsgKeyDown, MsgMouseDown] = CanvasMsg.members
+export const [MsgTick, MsgKeyDown, MsgMouseDown, MsgKeyUp, MsgMouseUp] = CanvasMsg.members
 
 const imageCacheRef = Ref.unsafeMake(HashMap.empty())
 
